@@ -4,13 +4,16 @@ enum week{sun,mon,tue,wed,thu,fri,sat};
  int main(){
     enum week today;
     //assign a value to enum
-    today = wed;
+    today = wed ;
     //display the value of enum
-
-    printf("today is %d\n",today);
-
+    int i;
+for( i = 0; i <= 10; i++){
+    printf("today is :");
+    scanf("%d",&today);
         //use switch case to display day
-
+        
+ 
+ 
         switch(today){
             case sun:
                 printf("today is sunday\n");
@@ -36,6 +39,6 @@ enum week{sun,mon,tue,wed,thu,fri,sat};
             default:
                 printf("invalid day\n");
         }
-
-return 0;
+}
+return today;
  }
